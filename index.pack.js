@@ -573,7 +573,7 @@ function Card(props) {
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.default = Hero;
 
@@ -584,21 +584,21 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Hero() {
-    return _react2.default.createElement(
-        "section",
-        { className: "hero" },
-        _react2.default.createElement("img", { src: "../images/photo-grid.png", className: "hero--photo" }),
-        _react2.default.createElement(
-            "h1",
-            { className: "hero--header" },
-            "Online Experiences"
-        ),
-        _react2.default.createElement(
-            "p",
-            { className: "hero--text" },
-            "Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home."
-        )
-    );
+  return _react2.default.createElement(
+    "section",
+    { className: "hero" },
+    _react2.default.createElement("img", { src: "../images/photo-grid.png", className: "hero--photo" }),
+    _react2.default.createElement(
+      "h1",
+      { className: "hero--header" },
+      "Online Experiences"
+    ),
+    _react2.default.createElement(
+      "p",
+      { className: "hero--text" },
+      "Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home."
+    )
+  );
 }
 
 /***/ }),

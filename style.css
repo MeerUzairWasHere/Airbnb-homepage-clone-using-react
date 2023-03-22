@@ -36,7 +36,7 @@ section {
 }
 
 .hero--photo {
-    max-width: 400px;
+    max-width: 100%;
     align-self: center;
 }
 
@@ -98,4 +98,18 @@ section {
     padding: 5px 7px;
     border-radius: 2px;
     font-weight: bold;
+}
+@media screen and (min-width:480px) {
+
+    body{
+        text-align: center;
+    }
+
+    .hero--photo {
+        max-width: 700px;
+        
+    }
+.cards-list {
+    justify-content: center;
+}
 }
