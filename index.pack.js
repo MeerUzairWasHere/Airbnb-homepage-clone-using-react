@@ -494,7 +494,7 @@ if (process.env.NODE_ENV === 'production') {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = Card;
 
@@ -505,61 +505,64 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Card(props) {
-  var badgeText = void 0;
-  if (props.openSpots === 0) {
-    badgeText = "SOLD OUT";
-  } else if (props.location === "Online") {
-    badgeText = "ONLINE";
-  }
+    var badgeText = void 0;
+    if (props.openSpots === 0) {
+        badgeText = "SOLD OUT";
+    } else if (props.location === "Online") {
+        badgeText = "ONLINE";
+    }
 
-  return _react2.default.createElement(
-    "div",
-    { className: "card" },
-    badgeText && _react2.default.createElement(
-      "div",
-      { className: "card--badge" },
-      badgeText
-    ),
-    _react2.default.createElement("img", { src: "./" + props.coverImg, className: "card--image" }),
-    _react2.default.createElement(
-      "div",
-      { className: "card--stats" },
-      _react2.default.createElement("img", { src: "./star.png", className: "card--star" }),
-      _react2.default.createElement(
-        "span",
-        null,
-        props.stats.rating
-      ),
-      _react2.default.createElement(
-        "span",
-        { className: "gray" },
-        "(",
-        props.stats.reviewCount,
-        ") \u2022 "
-      ),
-      _react2.default.createElement(
-        "span",
-        { className: "gray" },
-        props.location
-      )
-    ),
-    _react2.default.createElement(
-      "p",
-      { className: "card--title" },
-      props.title
-    ),
-    _react2.default.createElement(
-      "p",
-      { className: "card--price" },
-      _react2.default.createElement(
-        "span",
-        { className: "bold" },
-        "From $",
-        props.price
-      ),
-      " / person"
-    )
-  );
+    return _react2.default.createElement(
+        "div",
+        { className: "card" },
+        badgeText && _react2.default.createElement(
+            "div",
+            { className: "card--badge" },
+            badgeText
+        ),
+        _react2.default.createElement("img", {
+            src: "../images/" + props.coverImg,
+            className: "card--image"
+        }),
+        _react2.default.createElement(
+            "div",
+            { className: "card--stats" },
+            _react2.default.createElement("img", { src: "../images/star.png", className: "card--star" }),
+            _react2.default.createElement(
+                "span",
+                null,
+                props.stats.rating
+            ),
+            _react2.default.createElement(
+                "span",
+                { className: "gray" },
+                "(",
+                props.stats.reviewCount,
+                ") \u2022 "
+            ),
+            _react2.default.createElement(
+                "span",
+                { className: "gray" },
+                props.location
+            )
+        ),
+        _react2.default.createElement(
+            "p",
+            { className: "card--title" },
+            props.title
+        ),
+        _react2.default.createElement(
+            "p",
+            { className: "card--price" },
+            _react2.default.createElement(
+                "span",
+                { className: "bold" },
+                "From $",
+                props.price
+            ),
+            " / person"
+        )
+    );
 }
 
 /***/ }),
@@ -570,7 +573,7 @@ function Card(props) {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = Hero;
 
@@ -581,21 +584,21 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Hero() {
-  return _react2.default.createElement(
-    "section",
-    { className: "hero" },
-    _react2.default.createElement("img", { src: "./photo-grid.png", className: "hero--photo" }),
-    _react2.default.createElement(
-      "h1",
-      { className: "hero--header" },
-      "Online Experiences"
-    ),
-    _react2.default.createElement(
-      "p",
-      { className: "hero--text" },
-      "Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home."
-    )
-  );
+    return _react2.default.createElement(
+        "section",
+        { className: "hero" },
+        _react2.default.createElement("img", { src: "../images/photo-grid.png", className: "hero--photo" }),
+        _react2.default.createElement(
+            "h1",
+            { className: "hero--header" },
+            "Online Experiences"
+        ),
+        _react2.default.createElement(
+            "p",
+            { className: "hero--text" },
+            "Join unique interactive activities led by one-of-a-kind hosts\u2014all without leaving home."
+        )
+    );
 }
 
 /***/ }),
@@ -606,7 +609,7 @@ function Hero() {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 exports.default = Navbar;
 
@@ -617,11 +620,11 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Navbar() {
-  return _react2.default.createElement(
-    "nav",
-    null,
-    _react2.default.createElement("img", { src: "./airbnb-logo.png", className: "nav--logo" })
-  );
+    return _react2.default.createElement(
+        "nav",
+        null,
+        _react2.default.createElement("img", { src: "../images/airbnb-logo.png", className: "nav--logo" })
+    );
 }
 
 /***/ }),
